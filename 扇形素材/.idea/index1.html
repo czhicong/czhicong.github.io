@@ -1,0 +1,92 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+
+        #nav {
+            width: 130px;
+            height: 400px;
+            position: absolute;
+            left: 0;
+            right: 0;
+            top: 0;
+            bottom: 0;
+            margin: auto;
+        }
+
+        #nav li {
+            position: absolute;
+            list-style: none;
+            box-shadow: 2px 2px 10px blue;
+            transform-origin: 25px 375px;
+            transition: 1s;
+        }
+
+        #nav img {
+            display: block;
+        }
+    </style>
+</head>
+<body>
+<ul id="nav">
+    <li><img src="img/img1.png" alt=""></li>
+    <li><img src="img/img2.png" alt=""></li>
+    <li><img src="img/img3.png" alt=""></li>
+    <li><img src="img/img4.png" alt=""></li>
+    <li><img src="img/img5.png" alt=""></li>
+    <li><img src="img/img6.png" alt=""></li>
+    <li><img src="img/img7.png" alt=""></li>
+    <li><img src="img/img8.png" alt=""></li>
+    <li><img src="img/img9.png" alt=""></li>
+    <li><img src="img/img10.png" alt=""></li>
+    <li><img src="img/img11.png" alt=""></li>
+    <li><img src="img/img12.png" alt=""></li>
+</ul>
+<script>
+    window.onload = function () {
+        var li = document.querySelectorAll("#nav li");
+        var no=true;
+        li[li.length - 1].onclick = function () {
+            for (var i = 0; i < li.length; i++) {
+                var n=i-li.length/2;
+                if(no){
+                    n=n*15;
+                }else{
+                    n=360
+                }
+                li[i].style.transform = "rotateZ("+n+"deg)"
+            }
+            no=!no;
+        }
+
+        //旋转至零度
+        for(var p=0;p<li.length-1;p++){
+            li[p].index=p;
+            li[p].onclick=function(){
+                //零
+                this.style.transform = "rotateZ(0deg)"
+                //左
+                var leftdeg=0;
+                for(var y=this.index-1; y>=0;y--){
+                    leftdeg=leftdeg-15;
+                    li[y].style.transform="rotate("+leftdeg+"deg)"
+                };
+                //右
+                var rightdeg=15;
+                for(var r=this.index+1;r<li.length;r++){
+                    rightdeg=rightdeg+15;
+                    li[r].style.transform="rotate("+rightdeg+"deg)";
+                }
+            }
+        }
+
+    }
+</script>
+</body>
+</html>
