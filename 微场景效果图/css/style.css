@@ -31,8 +31,41 @@ body {
     top: 95%;
     left:50%;
 }
+#mp3Btn{
+    z-index: 100;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    width: 30px;
+    height: 30px;
+    background:rgba(0, 0, 0, 0.49);
+    border-radius: 360px;
+    text-align: center;
+    line-height: 28px;
+    border:3px solid #ccc;
+    animation: mp3key 4s;
+    /*一直执行*/
+    animation-iteration-count: infinite;
+    /*匀速执行*/
+    animation-timing-function:linear;
+    /*默认运行动画*/
+    animation-play-state:running;
+}
+
+@keyframes mp3key {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#mp3Btn img{
+    width: 10px;
+}
 /*第一屏样式*/
-.s1,.s2{
+.s1,.s2,.s3{
     background: url("../img/bj.png");
     position:relative;
     height: 100%;
@@ -76,12 +109,12 @@ body {
 }
 .s1 .main img:nth-of-type(1){
     width: 40%;
-    animation:pulse infinite;
+
 }
 .s1 .main img:nth-of-type(2){
     width: 80%;
     margin-bottom: 20px;
-    animation: pulse infinite;
+
 }
 .s1 .main p{
     color:#fff;
@@ -111,10 +144,6 @@ body {
      height:60px;
 
  }
-.s1 .footer .p1,
-.s1 .footer .p2{
-    animation: pulse infinite;
-}
 
 .s1 .footer p:nth-of-type(2){
     margin-bottom: 35px;
@@ -198,7 +227,7 @@ body {
     line-height: 25px;
     display: inline-block;
     position: absolute;
-    bottom: -10px;
+    bottom:-10px;
     left:50%;
     margin-left: -60px;
     background:-moz-linear-gradient(left,#00ecfc,#00fd9d);/*Mozilla*/
@@ -210,7 +239,89 @@ body {
     background: -webkit-linear-gradient(left, #00ecfc, #00fd9d); /*new gradient for Webkit*/
     background: -o-linear-gradient(left, #00ecfc, #00fd9d); /*Opera11*/
 }
-.s2 .footer{
-    position: absolute;
 
+/*第三屏样式*/
+.s3{
+    color: #00ffcc;
+    position: relative;
+    font-weight: bold;
+}
+.s3 h2{
+    font-size: 26px;
+    position: relative;
+    top: 12%;
+}
+.s3 small{
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    letter-spacing:7px;
+}
+.s3 .main div:nth-of-type(1){
+    width: 135px;
+    height: 135px;
+background: -webkit-radial-gradient(rgba(225,0,0,0),rgba(5,97,120,0.8));
+    border-radius: 50%;
+    text-align: center;
+    line-height: 135px;
+    position: absolute;
+    top: 40%;
+    left: 32%;
+}
+.s3 .main div:nth-of-type(2),
+.s3 .main div:nth-of-type(3),
+.s3 .main div:nth-of-type(4),
+.s3 .main div:nth-of-type(5),
+.s3 .main div:nth-of-type(6),
+.s3 .main div:nth-of-type(7){
+    width: 62px;
+    height: 62px;
+    background: -webkit-radial-gradient(rgba(225,0,0,0),rgba(5,97,120,0.8));
+    border-radius: 50%;
+    text-align: center;
+    line-height: 62px;
+}
+.s3 .main div:nth-of-type(2){
+    position: absolute;
+    top: 25%;
+    left: 18%;
+    }
+.s3 .main div:nth-of-type(3){
+    position: absolute;
+    top: 25%;
+    right: 15%;
+}
+.s3 .main div:nth-of-type(4){
+    position: absolute;
+    top: 45%;
+    right: 5%;
+}
+.s3 .main div:nth-of-type(5){
+    position: absolute;
+    top: 66%;
+    right: 15%;
+}
+.s3 .main div:nth-of-type(6){
+    position: absolute;
+    top:66%;
+    left: 18%;
+}
+.s3 .main div:nth-of-type(7){
+    position: absolute;
+    top: 45%;
+    left: 5%;
+}
+.s3 .footer{
+    position: absolute;
+    bottom: 10%;
+    left:10%;
+}
+.s3 .footer p:nth-of-type(1){
+    background:#03f1d1 ;
+    height: 40px;
+    width: 5px;
+    background-size: cover;
+    position: absolute;
+    top: 0;
+    left: -5%;
 }
