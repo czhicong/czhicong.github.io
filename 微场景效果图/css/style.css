@@ -26,10 +26,25 @@ body {
     background: #fff;
 }
 .swiper-button-next {
-    transform: rotateZ(90deg);
+    transform: rotateZ(-90deg);
      position: absolute;
+    width: 18px;
+    height: 30px;
+    background-size: contain;
     top: 95%;
     left:50%;
+    animation: jt 2s infinite;
+}
+@keyframes jt {
+    0%{
+        top:95%;
+        opacity: 1;
+    }
+    100%{
+        top:90%;
+        opacity: 0;
+    }
+
 }
 #mp3Btn{
     z-index: 100;
@@ -65,7 +80,7 @@ body {
     width: 10px;
 }
 /*第一屏样式*/
-.s1,.s2,.s3{
+.s1,.s2,.s3,.s4{
     background: url("../img/bj.png");
     position:relative;
     height: 100%;
@@ -100,6 +115,7 @@ body {
     top: 66%;
     left: 73%;
     animation:swing infinite;
+   transform-origin:center;
     z-index: 1000;
 }
 .s1 .header img:nth-of-type(5){
@@ -206,11 +222,35 @@ body {
 }
 .s1 .footer p:nth-of-type(3) img{
     position:absolute;
+    bottom: -13%;
     height: 60px;
 }
 .s1 .footer p img:nth-of-type(2){
     margin-left: -23px;
 }
+.p3 img:nth-of-type(1){
+    animation: 3s dong infinite alternate linear;
+}
+@keyframes dong {
+    0%{
+left:-50px;
+    }
+    100%{
+        left:20px;
+    }
+}
+.p3 img:nth-of-type(2){
+    animation: 3s do infinite alternate linear;
+}
+@keyframes do {
+    0%{
+        left:50px;
+    }
+    100%{
+        left:-50px;
+    }
+}
+
 /*第二屏样式*/
 .s2{
     color: #00ffcc;
@@ -429,4 +469,223 @@ background: -webkit-radial-gradient(rgba(225,0,0,0),rgba(5,97,120,0.8));
     position: absolute;
     top: 0;
     left: -5%;
+}
+.s4{
+    color: #00ffcc;
+    position: relative;
+    font-weight: bold;
+}
+.s4 h2{
+    font-size: 26px;
+    position: relative;
+    top: 12%;
+}
+.s4 h2::before,
+.s4 h2::after{
+    content: "";
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s4 h2::before {
+    background: url(../img/14.png);
+    background-size: contain;
+    margin-left: -95px;
+    margin-top: 10px;
+}
+.s4 h2::after {
+    background: url(../img/13.png);
+    background-size: contain;
+    margin-left: 66px;
+    margin-top: 10px;
+    top: 0;
+}
+.s4 small{
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    letter-spacing:7px;
+}
+.s4 div{
+    position: absolute;
+    top: 25%;
+    width: 80%;
+    height: 380px;
+    left: 50%;
+    margin-left: -40%;
+}
+.s4 div img{
+    width: 100%;
+    opacity:0.4 ;
+}
+.s4 div p{
+    position: absolute;
+    z-index:1000 ;
+}
+.s4 div .p1{
+    top: 20%;
+    width: 100%;
+}
+.s4 div .p1 img:nth-of-type(1){
+    width: 15px;
+    height: 15px;
+}
+.s4 div .p1 img:nth-of-type(2){
+    width: 15px;
+    height: 15px;
+    margin-left: 4%;
+}
+.s4 div p:nth-of-type(2){
+    top:26%;
+    width: 100%;
+    left: -15%;
+}
+.s4 div p:nth-of-type(2) span,
+.s4 div p:nth-of-type(8) span,
+.s4 div p:nth-of-type(5) span{
+color:#fafaff;
+}
+.s4 div p:nth-of-type(3) span{
+    width: 60%;
+    height: 14px;
+    display: inline-block;
+    background-size: contain;
+    background:-moz-linear-gradient(left,#0d5853,#26f9b2);/*Mozilla*/
+    background:-webkit-gradient(linear,0 50%,100% 50%,from(#0d5853),to(#26f9b2));/*Old gradient for webkit*/
+    background:-webkit-linear-gradient(left,#0d5853,#26f9b2);/*new gradient for Webkit*/
+    background:-o-linear-gradient(left,#0d5853,#26f9b2); /*Opera11*/
+    background: -moz-linear-gradient(left, #0d5853, #26f9b2); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#0d5853), to(#26f9b2)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #0d5853, #26f9b2); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #0d5853, #26f9b2); /*Opera11*/
+
+}
+.s4 div p:nth-of-type(3){
+    color:#fafaff;
+    top: 33%;
+    width: 100%;
+    right: -4%;
+}
+.s4 div p:nth-of-type(4){
+    color: #fafaff;
+    top: 37%;
+    width: 100%;
+    right: 8%;
+}
+.s4 div p:nth-of-type(4) span{
+    width: 30%;
+    height: 14px;
+    display: inline-block;
+    background-size: contain;
+    background:-moz-linear-gradient(left,#052d47,#01beff);/*Mozilla*/
+    background:-webkit-gradient(linear,0 50%,100% 50%,from(#052d47),to(#01beff));/*Old gradient for webkit*/
+    background:-webkit-linear-gradient(left,#052d47,#01beff);/*new gradient for Webkit*/
+    background:-o-linear-gradient(left,#052d47,#01beff); /*Opera11*/
+    background: -moz-linear-gradient(left, #052d47, #01beff); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#052d47), to(#01beff)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #052d47, #01beff); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #052d47, #01beff); /*Opera11*/
+
+}
+.s4 div p:nth-of-type(5){
+    top: 46%;
+    width: 100%;
+    left: -16%;
+}
+.s4 div p:nth-of-type(6) span{
+    width: 40%;
+    height: 14px;
+    display: inline-block;
+    background-size: contain;
+    background:-moz-linear-gradient(left,#0d5853,#26f9b2);/*Mozilla*/
+    background:-webkit-gradient(linear,0 50%,100% 50%,from(#0d5853),to(#26f9b2));/*Old gradient for webkit*/
+    background:-webkit-linear-gradient(left,#0d5853,#26f9b2);/*new gradient for Webkit*/
+    background:-o-linear-gradient(left,#0d5853,#26f9b2); /*Opera11*/
+    background: -moz-linear-gradient(left, #0d5853, #26f9b2); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#0d5853), to(#26f9b2)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #0d5853, #26f9b2); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #0d5853, #26f9b2); /*Opera11*/
+
+}
+.s4 div p:nth-of-type(6){
+    color:#fafaff;
+    top: 53%;
+    width: 100%;
+    right: 5%;
+}
+.s4 div p:nth-of-type(7){
+    color: #fafaff;
+    top: 57%;
+    width: 100%;
+    right: 10%;
+}
+.s4 div p:nth-of-type(7) span{
+    width: 30%;
+    height: 14px;
+    display: inline-block;
+    background-size: contain;
+    background:-moz-linear-gradient(left,#052d47,#01beff);/*Mozilla*/
+    background:-webkit-gradient(linear,0 50%,100% 50%,from(#052d47),to(#01beff));/*Old gradient for webkit*/
+    background:-webkit-linear-gradient(left,#052d47,#01beff);/*new gradient for Webkit*/
+    background:-o-linear-gradient(left,#052d47,#01beff); /*Opera11*/
+    background: -moz-linear-gradient(left, #052d47, #01beff); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#052d47), to(#01beff)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #052d47, #01beff); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #052d47, #01beff); /*Opera11*/
+
+}
+.s4 div p:nth-of-type(8){
+    top:66%;
+    width: 100%;
+    left: -18%;
+}
+.s4 div p:nth-of-type(9) span{
+    width: 60%;
+    height: 14px;
+    display: inline-block;
+    background-size: contain;
+    background:-moz-linear-gradient(left,#0d5853,#26f9b2);/*Mozilla*/
+    background:-webkit-gradient(linear,0 50%,100% 50%,from(#0d5853),to(#26f9b2));/*Old gradient for webkit*/
+    background:-webkit-linear-gradient(left,#0d5853,#26f9b2);/*new gradient for Webkit*/
+    background:-o-linear-gradient(left,#0d5853,#26f9b2); /*Opera11*/
+    background: -moz-linear-gradient(left, #0d5853, #26f9b2); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#0d5853), to(#26f9b2)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #0d5853, #26f9b2); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #0d5853, #26f9b2); /*Opera11*/
+
+}
+.s4 div p:nth-of-type(9){
+    color:#fafaff;
+    top: 73%;
+    width: 42%;
+    right: 45%;
+}
+.s4 div p:nth-of-type(10){
+    color: #fafaff;
+    top: 77%;
+    width: 100%;
+    right: 25%;
+}
+.s4 div p:nth-of-type(10) span{
+    width: 10%;
+    height: 14px;
+    display: inline-block;
+    background-size: contain;
+    background:-moz-linear-gradient(left,#052d47,#01beff);/*Mozilla*/
+    background:-webkit-gradient(linear,0 50%,100% 50%,from(#052d47),to(#01beff));/*Old gradient for webkit*/
+    background:-webkit-linear-gradient(left,#052d47,#01beff);/*new gradient for Webkit*/
+    background:-o-linear-gradient(left,#052d47,#01beff); /*Opera11*/
+    background: -moz-linear-gradient(left, #052d47, #01beff); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#052d47), to(#01beff)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #052d47, #01beff); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #052d47, #01beff); /*Opera11*/
+
+}
+.s4 div p:nth-of-type(11){
+    font-size: 1px;
+    top:86%;
+    right: 0;
+    width: 100%;
+    background-size: contain;
 }
