@@ -80,7 +80,13 @@ body {
     width: 10px;
 }
 /*第一屏样式*/
-.s1,.s2,.s3,.s4{
+.s1,
+.s2,
+.s3,
+.s5,
+.s6,
+.s7,
+.s4{
     background: url("../img/bj.png");
     position:relative;
     height: 100%;
@@ -337,8 +343,39 @@ left:-50px;
     background: -webkit-linear-gradient(left, #00ecfc, #00fd9d); /*new gradient for Webkit*/
     background: -o-linear-gradient(left, #00ecfc, #00fd9d); /*Opera11*/
 }
-
+.s2 .p3 img,
+.s3 .p3 img,
+.s4 .p3 img,
+.s5 .p3 img,
+.s6 .p3 img,
+.s7 .p3 img{
+    position: absolute;
+    bottom: -2%;
+    height: 60px;
+}
 /*第三屏样式*/
+.s3 h2::before,
+.s3 h2::after{
+    content: "";
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s3 h2::before {
+    background: url(../img/14.png);
+    background-size: contain;
+    margin-left: -95px;
+    margin-top: 10px;
+}
+.s3 h2::after {
+    background: url(../img/13.png);
+    background-size: contain;
+    margin-left: 66px;
+    margin-top: 10px;
+    top: 0;
+}
+
 .s3{
     color: #00ffcc;
     position: relative;
@@ -689,3 +726,324 @@ color:#fafaff;
     width: 100%;
     background-size: contain;
 }
+.s5{
+    color: #00ffcc;
+    position: relative;
+    font-weight: bold;
+}
+.s5 h2{
+    font-size: 26px;
+    position: relative;
+    top: 12%;
+}
+.s5 h2::before,
+.s5 h2::after{
+    content: "";
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s5 h2::before {
+    background: url(../img/14.png);
+    background-size: contain;
+    margin-left: -95px;
+    margin-top: 10px;
+}
+.s5 h2::after {
+    background: url(../img/13.png);
+    background-size: contain;
+    margin-left: 66px;
+    margin-top: 10px;
+    top:0;
+}
+.s5 small{
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    letter-spacing:7px;
+}
+.s5 .class1 img:nth-of-type(1){
+    position: absolute;
+    top: 25%;
+    left: 10%;
+    width: 35%;
+    height: 27%;
+}
+.s5 .class2 img:nth-of-type(1){
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    width: 35%;
+    height: 27%;
+}
+.s5 .class3 img:nth-of-type(1){
+    position: absolute;
+    top: 55%;
+    left: 10%;
+    width: 35%;
+    height: 27%;
+}
+.s5 .class4 img:nth-of-type(1){
+    position: absolute;
+    top: 55%;
+    right: 10%;
+    width: 35%;
+    height: 27%;
+}
+.s5 .class1 img:nth-of-type(2),
+.s5 .class2 img:nth-of-type(2),
+.s5 .class3 img:nth-of-type(2),
+.s5 .class4 img:nth-of-type(2){
+    width: 25%;
+}
+
+.s5 .class1 img:nth-of-type(2){
+    position: absolute;
+    top: 27%;
+    left: 15%;
+}
+.s5 .class1 p:nth-of-type(1){
+    position: absolute;
+    top: 42%;
+    left: 15%;
+}
+
+.s5 .class2 img:nth-of-type(2){
+    position: absolute;
+    top: 27%;
+    right: 15%;
+}
+.s5 .class2 p:nth-of-type(1){
+    position: absolute;
+    top: 42%;
+    right: 13%;
+}
+
+.s5 .class3 img:nth-of-type(2){
+    position: absolute;
+    top: 57%;
+    left: 15%;
+}
+.s5 .class3 p:nth-of-type(1){
+    position: absolute;
+    top: 72%;
+    left: 15%;
+}
+
+.s5 .class4 img:nth-of-type(2){
+    position: absolute;
+    top: 57%;
+    right: 15%;
+}
+.s5 .class4 p:nth-of-type(1){
+    position: absolute;
+    top: 72%;
+    right: 13%;
+}
+.s5 .class1 p:nth-of-type(2){
+    position: absolute;
+    color:#000;
+    top: 45%;
+    right: 17%;
+    background: url("../img/9.png");
+    width: 90px;
+    height: 21px;
+    border-radius: 10px;
+    background-size: contain;
+}
+.s5 .class2 p:nth-of-type(2){
+    position: absolute;
+    color:#000;
+    top: 76%;
+    left: 18%;
+    background: url("../img/9.png");
+    width: 90px;
+    height: 21px;
+    border-radius: 10px;
+    background-size: contain;
+}
+.s5 .class3 p:nth-of-type(2){
+    position: absolute;
+    color:#000;
+    top: 76%;
+    left: 62%;
+    background: url("../img/9.png");
+    width: 90px;
+    height: 21px;
+    border-radius: 10px;
+    background-size: contain;
+}
+.s5 .class4 p:nth-of-type(2){
+    position: absolute;
+    color:#000;
+    top: 45%;
+    left: 18%;
+    background: url("../img/9.png");
+    width: 90px;
+    height: 21px;
+    border-radius: 10px;
+    background-size: contain;
+}
+.s6{
+    color: #00ffcc;
+    position: relative;
+    font-weight: bold;
+}
+.s6 h2{
+    font-size: 26px;
+    position: relative;
+    top: 12%;
+}
+.s6 h2::before,
+.s6 h2::after{
+    content: "";
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s6 h2::before {
+    background: url(../img/14.png);
+    background-size: contain;
+    margin-left: -95px;
+    margin-top: 10px;
+}
+.s6 h2::after {
+    background: url(../img/13.png);
+    background-size: contain;
+    margin-left: 66px;
+    margin-top: 10px;
+    top:0;
+}
+.s6 small{
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    letter-spacing:7px;
+}
+.s6 .dv{
+    position: absolute;
+    top:28%;
+    left: 5%;
+}
+.s6 .div1{
+    position: absolute;
+    top:27%;
+    left: 15%;
+}
+.s6 .div1 .p1,
+.s6 .div2 .p1,
+.s6 .div3 .p1{
+    color:#000;
+    border-radius: 16px 0 0 0 ;
+    width: 67%;
+    height: 27px;
+    margin-bottom: 5%;
+    background:-moz-linear-gradient(left,#00fd9d,#05061b);/*Mozilla*/
+    background:-webkit-gradient(linear,0 50%,100% 50%,from(#00fd9d),to(#05061b));/*Old gradient for webkit*/
+    background:-webkit-linear-gradient(left,#00fd9d,#05061b);/*new gradient for Webkit*/
+    background:-o-linear-gradient(left,#00fd9d,#05061b); /*Opera11*/
+    background: -moz-linear-gradient(left, #00fd9d, #05061b); /*Mozilla*/
+    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00fd9d), to(#05061b)); /*Old gradient for webkit*/
+    background: -webkit-linear-gradient(left, #00fd9d, #05061b); /*new gradient for Webkit*/
+    background: -o-linear-gradient(left, #00fd9d, #05061b); /*Opera11*/
+}
+.s6 .div1 .p2,
+.s6 .div2 .p2,
+.s6 .div3 .p2{
+    background: -webkit-radial-gradient(rgba(225, 0, 0, 0), rgba(5, 97, 120, 0.8));
+    width: 105%;
+    height: 80px;
+    border-radius: 6px;
+    display: block;
+    position: absolute;
+}
+.s6 .div2{
+    position: absolute;
+    top:47%;
+    left: 15%;
+}
+.s6 .div3{
+    position: absolute;
+    top:67%;
+    left: 15%;
+}
+.s7{
+    color: #00ffcc;
+    position: relative;
+    font-weight: bold;
+}
+.s7 h2{
+    font-size: 26px;
+    position: relative;
+    top: 12%;
+}
+.s7 h2::before,
+.s7 h2::after{
+    content: "";
+    width: 80px;
+    height: 20px;
+    display: inline-block;
+    position: absolute;
+}
+.s7 h2::before {
+    background: url(../img/14.png);
+    background-size: contain;
+    margin-left: -95px;
+    margin-top: 10px;
+}
+.s7 h2::after {
+    background: url(../img/13.png);
+    background-size: contain;
+    margin-left: 66px;
+    margin-top: 10px;
+    top:0;
+}
+.s7 small{
+    margin-top: 10px;
+    display: block;
+    font-size: 14px;
+    letter-spacing:7px;
+}
+
+.s7 div img{
+    width: 80%;
+    position: absolute;
+    top: 30%;
+    left:10%;
+}
+.s7 div input{
+     position: absolute;
+     width: 50%;
+     height: 7%;
+ }
+.s7 div input:nth-of-type(1){
+    left: 25%;
+    top: 35%;
+}
+.s7 div input:nth-of-type(2){
+    left: 25%;
+    top: 43%;
+}
+.s7 div input:nth-of-type(3){
+    left: 25%;
+    top: 51%;
+}
+.s7 div input:nth-of-type(4){
+    left: 25%;
+    top: 60%;
+    background: green;
+    font-weight: bold;
+}
+.s7 div p:nth-of-type(1){
+    position: absolute;
+    bottom: 18%;
+    left: 22%;
+}
+.s7 div p:nth-of-type(2){
+    position: absolute;
+    bottom: 14%;
+    left: 35%;
+}
+
