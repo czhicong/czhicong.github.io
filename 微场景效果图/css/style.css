@@ -232,17 +232,17 @@ body {
     height: 60px;
 }
 .s1 .footer p img:nth-of-type(2){
-    margin-left: -23px;
+    margin-left: -10%;
 }
 .p3 img:nth-of-type(1){
     animation: 3s dong infinite alternate linear;
 }
 @keyframes dong {
     0%{
-left:-50px;
+left:-70%;
     }
     100%{
-        left:20px;
+        left:50%;
     }
 }
 .p3 img:nth-of-type(2){
@@ -250,10 +250,10 @@ left:-50px;
 }
 @keyframes do {
     0%{
-        left:50px;
+        left:70%;
     }
     100%{
-        left:-50px;
+        left:-50%;
     }
 }
 
