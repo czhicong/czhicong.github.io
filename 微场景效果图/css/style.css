@@ -331,7 +331,7 @@ left:-50px;
     line-height: 25px;
     display: inline-block;
     position: absolute;
-    bottom:-15px;
+    bottom: 12%;
     left:50%;
     margin-left: -60px;
     background:-moz-linear-gradient(left,#00ecfc,#00fd9d);/*Mozilla*/
@@ -397,6 +397,8 @@ left:-50px;
 .s3 .class3,
 .s3 .class4{
     animation: zhuan 3s infinite linear running;
+    transform-origin:center;
+    border-radius: 50%;
 }
 @keyframes zhuan {
     from{
