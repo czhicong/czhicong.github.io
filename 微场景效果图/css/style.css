@@ -806,7 +806,7 @@ color:#fafaff;
 .s5 .class1 p:nth-of-type(1){
     position: absolute;
     top: 42%;
-    left: 15%;
+    left: 12%;
 }
 
 .s5 .class2 img:nth-of-type(2){
@@ -817,7 +817,7 @@ color:#fafaff;
 .s5 .class2 p:nth-of-type(1){
     position: absolute;
     top: 42%;
-    right: 13%;
+    right: 12%;
 }
 
 .s5 .class3 img:nth-of-type(2){
@@ -828,7 +828,7 @@ color:#fafaff;
 .s5 .class3 p:nth-of-type(1){
     position: absolute;
     top: 72%;
-    left: 15%;
+    left: 12%;
 }
 
 .s5 .class4 img:nth-of-type(2){
@@ -839,13 +839,13 @@ color:#fafaff;
 .s5 .class4 p:nth-of-type(1){
     position: absolute;
     top: 72%;
-    right: 13%;
+    right: 12%;
 }
 .s5 .class1 p:nth-of-type(2){
     position: absolute;
     color:#000;
-    top: 45%;
-    right: 17%;
+    top: 46%;
+    left: 17%;
     background: url("../img/9.png");
     width: 90px;
     height: 21px;
@@ -855,8 +855,8 @@ color:#fafaff;
 .s5 .class2 p:nth-of-type(2){
     position: absolute;
     color:#000;
-    top: 76%;
-    left: 18%;
+    top: 46%;
+    right: 18%;
     background: url("../img/9.png");
     width: 90px;
     height: 21px;
@@ -867,7 +867,7 @@ color:#fafaff;
     position: absolute;
     color:#000;
     top: 76%;
-    left: 62%;
+    left: 17%;
     background: url("../img/9.png");
     width: 90px;
     height: 21px;
@@ -877,8 +877,8 @@ color:#fafaff;
 .s5 .class4 p:nth-of-type(2){
     position: absolute;
     color:#000;
-    top: 45%;
-    left: 18%;
+    top: 76%;
+    right: 17%;
     background: url("../img/9.png");
     width: 90px;
     height: 21px;
@@ -929,6 +929,8 @@ color:#fafaff;
 }
 .s6 .div1{
     position: absolute;
+    width: 80%;
+    height: 20%;
     top:27%;
     left: 15%;
 }
@@ -953,21 +955,30 @@ color:#fafaff;
 .s6 .div2 .p2,
 .s6 .div3 .p2{
     background: -webkit-radial-gradient(rgba(225, 0, 0, 0), rgba(5, 97, 120, 0.8));
-    width: 105%;
+    width: 100%;
     height: 80px;
     border-radius: 6px;
     display: block;
     position: absolute;
 }
+.s6 .div1 .p2 p,
+.s6 .div2 .p2 p,
+.s6 .div3 .p2 p{
+    font-size: 2%;
+}
 .s6 .div2{
     position: absolute;
     top:47%;
     left: 15%;
+    width: 80%;
+    height: 20%;
 }
 .s6 .div3{
     position: absolute;
     top:67%;
     left: 15%;
+    width: 80%;
+    height: 20%;
 }
 .s7{
     color: #00ffcc;
@@ -1038,12 +1049,14 @@ color:#fafaff;
 }
 .s7 div p:nth-of-type(1){
     position: absolute;
-    bottom: 18%;
-    left: 22%;
+    bottom: 16%;
+    font-size: 2%;
+    left: 26%;
 }
 .s7 div p:nth-of-type(2){
     position: absolute;
     bottom: 14%;
-    left: 35%;
+    font-size: 2%;
+    left: 38%;
 }
 
