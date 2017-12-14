@@ -1,0 +1,92 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body {
+    position: relative;
+    height: 100%;
+}
+body {
+    background: #eee;
+    font-family: Helvetica Neue, Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    color:#000;
+    margin: 0;
+    padding: 0;
+}
+.swiper-container {
+    width: 100%;
+    height: 100%;
+}
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: #fff;
+}
+.swiper-button-next {
+    transform: rotateZ(-90deg);
+    position: absolute;
+    width: 18px;
+    height: 30px;
+    background-size: contain;
+    top: 95%;
+    left:50%;
+    animation: jt 2s infinite;
+}
+@keyframes jt {
+    0%{
+        top:95%;
+        opacity: 1;
+    }
+    100%{
+        top:90%;
+        opacity: 0;
+    }
+
+}
+#mp3Btn{
+    z-index: 100;
+    position: absolute;
+    top: 4%;
+    right: 4%;
+    width: 30px;
+    height: 30px;
+    background:rgba(0, 0, 0, 0.49);
+    border-radius: 360px;
+    text-align: center;
+    line-height: 28px;
+    border:3px solid #ccc;
+    animation: mp3key 4s;
+    /*一直执行*/
+    animation-iteration-count: infinite;
+    /*匀速执行*/
+    animation-timing-function:linear;
+    /*默认运行动画*/
+    animation-play-state:running;
+}
+
+@keyframes mp3key {
+    from {
+        transform: rotateZ(0deg);
+    }
+    to {
+        transform: rotateZ(360deg);
+    }
+}
+
+#mp3Btn img{
+    width: 10px;
+}
+/*第一屏样式*/
+.s1,
+.s2,
+.s3,
+.s5,
+.s6,
+.s7,
+.s4{
+    background: url("../img/bj.png");
+    position:relative;
+    height: 100%;
+}
