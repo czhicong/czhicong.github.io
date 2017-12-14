@@ -81,12 +81,101 @@ body {
 /*第一屏样式*/
 .s1,
 .s2,
-.s3,
-.s5,
-.s6,
-.s7,
-.s4{
+.s3{
+    color: dodgerblue;
+    width: 100%;
     background: url("../img/bj.png");
     position:relative;
     height: 100%;
 }
+.s1 div{
+    width: 100%;
+    height: 100%;
+}
+.s1 div{
+    color: dodgerblue;
+    padding-top: 35%;
+}
+.s1 div p:nth-of-type(1){
+    color: dodgerblue;
+    font-weight: bold;
+}
+.s1 div p:nth-of-type(2){
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 70px;
+    margin-top: 10%;
+}
+.s1 div p:nth-of-type(3){
+     color: dodgerblue;
+     font-weight: bold;
+     font-size: 50px;
+    margin-top: 25%;
+ }
+.s1 div small{
+    letter-spacing: 8px;
+    font-size: 14px;
+
+}
+/*第二屏样式*/
+.s2 div{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
+.s2 div img{
+    width: 80%;
+}
+.s2 div img:nth-of-type(1){
+    position: absolute;
+    top: -5%;
+}
+
+.s2 p{
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 28px;
+    position: absolute;
+}
+.s2 p:nth-of-type(1){
+    top: 35%;
+    left: 42%;
+}
+.s2 p:nth-of-type(2){
+    top: 44%;
+    left: 42%;
+}
+/*第san屏样式*/
+.s3{
+    width: 100%;
+}
+.s3 .dv{
+    width: 80%;
+    margin: auto;
+}
+.s3 .dv img{
+    width: 100%;
+
+    padding-top: 30%;
+}
+.s3 .dv .dv1,
+.s3 .dv .dv2,
+.s3 .dv .dv3{
+    width: 75%;
+}
+.s3 .dv .dv1 h1,
+.s3 .dv .dv2 h1,
+.s3 .dv .dv3 h1{
+    font-size: 16px;
+}
+.s3 .dv .dv1 p,
+.s3 .dv .dv2 p,
+.s3 .dv .dv3 p
+{
+    font-size: 12px;
+}
+.s3 .dv .dv1{
+    position: absolute;
+    top: 17%;
+    left: 12%;
+}https://s.wcd.im/v/2uZ5s/

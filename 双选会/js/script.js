@@ -42,6 +42,5 @@ mp3Btn.onclick = function () {
         mp3.pause();
     }
 }
-//browser-sync start --server --files "css/*.css, js/*.js, *.html
 
 
