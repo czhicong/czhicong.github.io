@@ -80,10 +80,10 @@ body {
 }
 /*第一屏样式*/
 .s1,
-.s4,
 .s5,
 .s6,
 .s2,
+.s4,
 .s3{
     color: dodgerblue;
     width: 100%;
@@ -113,8 +113,25 @@ body {
      color: dodgerblue;
      font-weight: bold;
      font-size: 50px;
-    margin-top: 25%;
+    margin-top: 23%;
  }
+.s1 div p:nth-of-type(4){
+    color: #05172d;
+    width: 40%;
+    text-align: center;
+    margin: auto;
+    font-size: 12px;
+    font-weight: bold;
+    background: orange;
+    border-radius: 360px;
+    margin-top: 2%;
+    margin-bottom: 2%;
+}
+.s1 div p:nth-of-type(5){
+    color: #fff;
+    font-size: 18px;
+
+}
 .s1 div small{
     letter-spacing: 8px;
     font-size: 14px;
@@ -147,6 +164,12 @@ body {
 .s2 p:nth-of-type(2){
     top: 44%;
     left: 42%;
+}
+.s2 p:nth-of-type(3),
+.s4 p:nth-of-type(3)
+{
+     bottom: -19%;
+    left: -43%;
 }
 /*第san屏样式*/
 .s3{
@@ -246,39 +269,40 @@ body {
     left: 5%;
     z-index: 1000;
 }
-.class1,
-.class2,
-.class3,
-.class4{
-    border:solid 1px dodgerblue;
-}
-.class1{
-    width: 37%;
-    position: absolute;
-    top:20%;
-    left: 30%;
+/*.class1,*/
+/*.class2,*/
+/*.class3,*/
+/*.class4{*/
+    /*border:solid 1px dodgerblue;*/
+/*}*/
+/*.class1{*/
+    /*width: 37%;*/
+    /*position: absolute;*/
+    /*top:20%;*/
+    /*left: 30%;*/
 
-}
-.class2{
-    width: 30%;
-    transform: rotateZ(-54deg);
-    position: absolute;
-    top: 35%;
-    left: 49%;
-}
-.class3{
-    width: 35%;
-    transform: rotateZ(-54deg);
-    position: absolute;
-    top: 64%;
-    left: 18%;
-}
-.class4{
-    width: 33%;
-    position: absolute;
-    top: 79%;
-    left: 31%;
-}
+/*}*/
+/*.class2{*/
+    /*width: 30%;*/
+    /*transform: rotateZ(-90deg);*/
+    /*position: absolute;*/
+    /*top: 35%;*/
+    /*left: 49%;*/
+    /*display: inline-block;*/
+/*}*/
+/*.class3{*/
+    /*width: 35%;*/
+    /*transform: rotateZ(-90deg);*/
+    /*position: absolute;*/
+    /*top: 64%;*/
+    /*left: 18%;*/
+/*}*/
+/*.class4{*/
+    /*width: 33%;*/
+    /*position: absolute;*/
+    /*top: 79%;*/
+    /*left: 31%;*/
+/*}*/
 .s5 .dv  div:nth-of-type(3){
     width: 100px;
     height: 100px;
@@ -342,6 +366,7 @@ body {
     height: 10%;
     position: absolute;
     left: 20%;
+    margin-top: 2%;
 }
 .s6 .dv input:nth-of-type(1){
     top: 15%;
@@ -368,6 +393,7 @@ body {
     bottom: 17%;
     color: #fff;
 }
+
 .s6 .dv p:nth-of-type(2){
     position: absolute;
     left: 33%;

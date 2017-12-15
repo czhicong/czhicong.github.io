@@ -41,6 +41,51 @@ mp3Btn.onclick = function () {
         //暂停音频
         mp3.pause();
     }
-}
+};
 
+
+
+var canvas=document.querySelector('canvas');
+var ctx=canvas.getContext("2d");
+var width=600;
+var height=400;
+var colorArr=["yellow","blue","orange","red","green"];
+var textArr=[
+    "web前段工程师web前段工程师",
+    "web前段工程师jquery",
+    "web前段工程师javascript",
+    "vue.js",
+    "php",
+    "bootstarp",
+    "web前段工程师",
+    "jquery",
+    "javascript",
+    "web前段工程师web前段工程师vue.js",
+    "web前段工程师web前段工程师php",
+    "web前段工程师web前段工程师bootstarp",
+    "web前段工程师",
+    "web前段工程师web前段工程师jquery"
+];
+canvas.width=width;
+canvas.height=height;
+var image=new Image();
+
+ctx.font = "20px Courier New";
+var numArrL=[80,10,0,30,50,43];//初始的X
+var numArrT=[80,100,20,300,380,210];//初始的Y
+setInterval(function(){
+    ctx.clearRect(0,0,canvas.width,canvas.height);
+    ctx.save();
+    for(var j=0;j<textArr.length;j++){
+        numArrL[j]-=(j+10)*0.2;
+        ctx.fillStyle = colorArr[j];
+        ctx.fillText(textArr[j],numArrL[j],numArrT[j]);
+    }
+    for(var i=0;i<textArr.length;i++){
+        if(numArrL[i]<=-200){
+            numArrL[i]=canvas.width;
+        }
+    }
+    ctx.restore();
+},20);
 
