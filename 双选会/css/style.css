@@ -80,6 +80,9 @@ body {
 }
 /*第一屏样式*/
 .s1,
+.s4,
+.s5,
+.s6,
 .s2,
 .s3{
     color: dodgerblue;
@@ -150,13 +153,14 @@ body {
     width: 100%;
 }
 .s3 .dv{
-    width: 80%;
+    width: 90%;
+    height: 95%;
     margin: auto;
 }
 .s3 .dv img{
     width: 100%;
-
-    padding-top: 30%;
+    height: 100%;
+    padding-top: 20%;
 }
 .s3 .dv .dv1,
 .s3 .dv .dv2,
@@ -166,16 +170,207 @@ body {
 .s3 .dv .dv1 h1,
 .s3 .dv .dv2 h1,
 .s3 .dv .dv3 h1{
-    font-size: 16px;
+    font-size: 18px;
+    text-align: left;
+    padding-bottom: 1%;
 }
 .s3 .dv .dv1 p,
 .s3 .dv .dv2 p,
 .s3 .dv .dv3 p
 {
-    font-size: 12px;
+    font-size: 14px;
 }
 .s3 .dv .dv1{
     position: absolute;
-    top: 17%;
+    top: 15%;
     left: 12%;
-}https://s.wcd.im/v/2uZ5s/
+}
+.s3 .dv .dv2{
+    position: absolute;
+    top: 48%;
+    left: 12%;
+}.s3 .dv .dv3{
+     position: absolute;
+     top: 57%;
+     left: 12%;
+ }
+ /*第四屏样式*/
+.s4 div{
+    position: absolute;
+    width: 100%;
+    top: 25%;
+}
+.s4 div img{
+    width: 80%;
+}
+.s4 div img:nth-of-type(1){
+    position: absolute;
+    top: -5%;
+}
+
+.s4 p{
+    color: dodgerblue;
+    font-weight: bold;
+    font-size: 28px;
+    position: absolute;
+}
+.s4 p:nth-of-type(1){
+    top: 35%;
+    left: 42%;
+}
+.s4 p:nth-of-type(2){
+    top: 44%;
+    left: 42%;
+}
+/*第五屏样式*/
+.s5 .dv{
+    width: 100%;
+    height: 100%;
+}
+.s5 .dv img{
+    width: 95%;
+    height: 98%;
+    padding-top: 17%;
+    opacity: 0.6;
+}
+.s5 .dv div:nth-of-type(1){
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    background: -webkit-radial-gradient(rgba(225,0,0,0),rgba(5,97,120,0.8));
+    border-radius: 50%;
+    position: absolute;
+    top: 12%;
+    left: 5%;
+    z-index: 1000;
+}
+.class1,
+.class2,
+.class3,
+.class4{
+    border:solid 1px dodgerblue;
+}
+.class1{
+    width: 37%;
+    position: absolute;
+    top:20%;
+    left: 30%;
+
+}
+.class2{
+    width: 30%;
+    transform: rotateZ(-54deg);
+    position: absolute;
+    top: 35%;
+    left: 49%;
+}
+.class3{
+    width: 35%;
+    transform: rotateZ(-54deg);
+    position: absolute;
+    top: 64%;
+    left: 18%;
+}
+.class4{
+    width: 33%;
+    position: absolute;
+    top: 79%;
+    left: 31%;
+}
+.s5 .dv  div:nth-of-type(3){
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    background: -webkit-radial-gradient(rgba(225,0,0,0),rgba(5,97,120,0.8));
+    border-radius: 50%;
+    position: absolute;
+    top: 12%;
+    left: 60%;
+    z-index: 1000;
+}
+.s5 .dv  div:nth-of-type(5){
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    background: -webkit-radial-gradient(rgba(225,0,0,0),rgba(5,97,120,0.8));
+    border-radius: 50%;
+    position: absolute;
+    top: 40%;
+    left: 35%;
+    z-index: 1000;
+}
+.s5 .dv  div:nth-of-type(7){
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    background: -webkit-radial-gradient(rgba(225,0,0,0),rgba(5,97,120,0.8));
+    border-radius: 50%;
+    position: absolute;
+    bottom: 12%;
+    left: 5%;
+    z-index: 1000;
+}
+.s5 .dv  div:nth-of-type(9){
+    width: 100px;
+    height: 100px;
+    text-align: center;
+    font-size: 26px;
+    line-height: 50px;
+    background: -webkit-radial-gradient(rgba(225,0,0,0),rgba(5,97,120,0.8));
+    border-radius: 50%;
+    position: absolute;
+    bottom: 12%;
+    left: 60%;
+    z-index: 1000;
+}
+/*第六*/
+.s6 .dv{
+    width: 100%;
+    height: 100%;
+    text-align:left;
+}
+.s6 .dv input{
+    width: 70%;
+    height: 10%;
+    position: absolute;
+    left: 20%;
+}
+.s6 .dv input:nth-of-type(1){
+    top: 15%;
+
+}
+.s6 .dv input:nth-of-type(2){
+    top: 25%;
+}
+.s6 .dv input:nth-of-type(3){
+    top: 35%;
+}
+.s6 .dv input:nth-of-type(4){
+     top: 45%;
+ }
+.s6 .dv input:nth-of-type(5){
+      bottom: 25%;
+       width: 50%;
+       left: 30%;
+    background: orange;
+  }
+.s6 .dv p:nth-of-type(1){
+    position: absolute;
+    left: 20%;
+    bottom: 17%;
+    color: #fff;
+}
+.s6 .dv p:nth-of-type(2){
+    position: absolute;
+    left: 33%;
+    bottom: 13%;
+    color: #fff;
+}

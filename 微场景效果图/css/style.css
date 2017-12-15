@@ -335,14 +335,7 @@ left:-10%;
     bottom: 12%;
     left:50%;
     margin-left: -60px;
-    background:-moz-linear-gradient(left,#00ecfc,#00fd9d);/*Mozilla*/
-    background:-webkit-gradient(linear,0 50%,100% 50%,from(#00ecfc),to(#00fd9d));/*Old gradient for webkit*/
-    background:-webkit-linear-gradient(left,#00ecfc,#00fd9d);/*new gradient for Webkit*/
-    background:-o-linear-gradient(left,#00ecfc,#00fd9d); /*Opera11*/
-    background: -moz-linear-gradient(left, #00ecfc, #00fd9d); /*Mozilla*/
-    background: -webkit-gradient(linear, 0 50%, 100% 50%, from(#00ecfc), to(#00fd9d)); /*Old gradient for webkit*/
-    background: -webkit-linear-gradient(left, #00ecfc, #00fd9d); /*new gradient for Webkit*/
-    background: -o-linear-gradient(left, #00ecfc, #00fd9d); /*Opera11*/
+
 }
 .s2 .p3 img,
 .s3 .p3 img,
